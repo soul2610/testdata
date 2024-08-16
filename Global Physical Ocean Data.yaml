@@ -1,0 +1,48 @@
+title: Global Physical Ocean Data
+description: >
+  This dataset contains global physical ocean data, including velocity components and other variables,
+  in NetCDF format.
+source: Copernicus Marine Environment Monitoring Service (CMEMS)
+format: NetCDF
+variables:
+  depth:
+    description: Depth levels
+    shape:
+      - 36
+    type: float32
+  latitude:
+    description: Latitude values
+    shape:
+      - 15
+    type: float32
+  longitude:
+    description: Longitude values
+    shape:
+      - 14
+    type: float32
+  time:
+    description: Time points
+    shape:
+      - 621
+    type: float64
+  uo:
+    description: U component of ocean velocity
+    shape:
+      - 621
+      - 36
+      - 15
+      - 14
+    type: float32
+  vo:
+    description: V component of ocean velocity
+    shape:
+      - 621
+      - 36
+      - 15
+      - 14
+    type: float32
+license: CC-BY 4.0
+download_link: https://example.com/path_to_your_file.nc
+contact:
+  name: Your Name
+  email: your.email@example.com
